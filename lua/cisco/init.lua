@@ -1,5 +1,7 @@
 local theme = require("cisco.theme")
 
+local M = {}
+
 local pre = function()
   vim.cmd("highlight clear")
   vim.cmd("syntax reset")
@@ -8,10 +10,10 @@ local pre = function()
   vim.o.background = "dark"
 end
 
-local setup = function()
+M.setup = function()
   pre()
   theme.load_ui()
   theme.load_text()
 end
 
-return setup
+return M 
