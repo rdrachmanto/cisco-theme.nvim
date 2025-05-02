@@ -1,6 +1,9 @@
 ## Cisco-theme.nvim 
 [![GitHub license](https://img.shields.io/github/license/rdrachmanto/cisco-theme.nvim)](https://github.com/rdrachmanto/cisco-theme.nvim/blob/main/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/rdrachmanto/cisco-theme.nvim.svg)](https://github.com/rdrachmanto/cisco-theme.nvim/stargazers)
 
+> [!WARNING]
+> This theme is still currently in development!
+
 ![Screenshot](./media/screenshot.png)
 
 This is a port of Cisco theme, originally for Zed editor, now available for Neovim. 
