@@ -21,7 +21,7 @@ This is a port of Cisco theme, originally for Zed editor, now available for Neov
    vim.cmd("colorscheme lua")
    ```
 
-# Supported Plugins
+## Supported Plugins
 
 WIP!
 
