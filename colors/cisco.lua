@@ -1,0 +1,2 @@
+require("cisco").setup()
+
