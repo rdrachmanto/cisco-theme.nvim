@@ -4,7 +4,7 @@ local pre = function()
   vim.cmd("highlight clear")
   vim.cmd("syntax reset")
   vim.g.colors_name = "cisco"
-  vim.o.termguicolors  true
+  vim.o.termguicolors = true
   vim.o.background = "dark"
 end
 
