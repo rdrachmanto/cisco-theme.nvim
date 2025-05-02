@@ -1,9 +1,9 @@
 ## Cisco-theme.nvim 
 [![GitHub license](https://img.shields.io/github/license/rdrachmanto/cisco-theme.nvim)](https://github.com/rdrachmanto/cisco-theme.nvim/blob/main/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/rdrachmanto/cisco-theme.nvim.svg)](https://github.com/rdrachmanto/cisco-theme.nvim/stargazers)
 
-This is a port of Cisco theme, originally for Zed editor, now available for Neovim. Also available for:
+![Screenshot](./media/screenshot.png)
 
-- Emacs [cisco-theme.el](https://github.com/rdrachmanto/cisco-theme.el)
+This is a port of Cisco theme, originally for Zed editor, now available for Neovim. 
 
 ## Installing
 
