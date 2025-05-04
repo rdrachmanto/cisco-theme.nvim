@@ -14,7 +14,14 @@ This is a port of Cisco theme, originally for Zed editor, now available for Neov
 
    ```lua
    {
-      "rdrachmanto/cisco-theme.nvim"
+      "rdrachmanto/cisco-theme.nvim",
+       config = function()
+           require("cisco").setup({
+               contrast = {
+                   floating_windows = true
+               }
+           })
+       end
    }
    ```
 
@@ -27,6 +34,18 @@ This is a port of Cisco theme, originally for Zed editor, now available for Neov
 ## Supported Plugins
 
 WIP!
+
+## Options
+
+This theme can be tweaked, the default options are as follows:
+
+```lua
+require("cisco").setup({
+    contrast = {
+        floating_windows = true  -- Options: true or false, if true, use lighter background color for floating windows (Lazy, WhicKey, etc..)
+    }
+})
+```
 
 ## Credits
 
