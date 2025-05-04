@@ -43,7 +43,9 @@ This theme can be tweaked, the default options are as follows:
 require("cisco").setup({
     contrast = {
         floating_windows = true  -- Options: true or false, if true, use lighter background color for floating windows (Lazy, WhicKey, etc..)
-    }
+    },
+    italic_keywords = true,
+    italic_comments = false
 })
 ```
 
