@@ -8,7 +8,8 @@ theme.load_ui = function(opts)
 
   if opts.contrast.floating_windows == true then
     set(0, "NormalFloat", { fg = c.light2, bg = c.black2 })
-    set(0, "FloatBorder", { fg = c.black2, bg = c.black2 })
+    set(0, "FloatBorder", { fg = c.black4, bg = c.black2 })
+    set(0, "FloatTitle", { bg = c.black2 })
   else
     set(0, "NormalFloat", { fg = c.light2, bg = c.black1 })
     set(0, "FloatBorder", { fg = c.black2, bg = None })
