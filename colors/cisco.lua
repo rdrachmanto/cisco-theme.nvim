@@ -1,2 +1,2 @@
-require("cisco").setup()
+require("cisco").apply()
 

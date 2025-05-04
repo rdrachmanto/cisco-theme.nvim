@@ -3,10 +3,16 @@ local theme = {}
 local set = vim.api.nvim_set_hl
 local c = require("cisco.colors")
 
-theme.load_ui = function()
+theme.load_ui = function(opts)
   set(0, "Normal", { fg = c.light2, bg = c.black1 })
-  set(0, "NormalFloat", { fg = c.light2, bg = c.black1 })
-  set(0, "FloatBorder", { fg = c.black2, bg = c.black2 })
+
+  if opts.contrast.floating_windows == true then
+    set(0, "NormalFloat", { fg = c.light2, bg = c.black2 })
+    set(0, "FloatBorder", { fg = c.black2, bg = c.black2 })
+  else
+    set(0, "NormalFloat", { fg = c.light2, bg = c.black1 })
+    set(0, "FloatBorder", { fg = c.black2, bg = None })
+  end
 
   set(0, "TabLine", { fg = c.black5, bg = c.black1 })
   set(0, "TabLineSel", { fg = c.black5, bg = c.black1 })
