@@ -10,9 +10,13 @@ theme.load_ui = function(opts)
     set(0, "NormalFloat", { fg = c.light2, bg = c.black2 })
     set(0, "FloatBorder", { fg = c.black4, bg = c.black2 })
     set(0, "FloatTitle", { bg = c.black2 })
+    set(0, "Pmenu", { fg = c.light2, bg = c.black2 })
+    set(0, "PmenuSel", { fg = c.black2, bg = c.orange2 })
   else
     set(0, "NormalFloat", { fg = c.light2, bg = c.black1 })
-    set(0, "FloatBorder", { fg = c.black2, bg = None })
+    set(0, "FloatBorder", { fg = c.black2, bg = "None" })
+    set(0, "Pmenu", { fg = c.light2, bg = c.black1 })
+    set(0, "PmenuSel", { fg = c.black1, bg = c.orange2 })
   end
 
   set(0, "TabLine", { fg = c.black5, bg = c.black1 })
@@ -47,6 +51,18 @@ theme.load_text = function(opts)
   set(0, "@variable", { fg = c.light2 })
   set(0, "Function", { fg = c.purple1 })
   set(0, "@property", { fg = c.light2 })
+end
+
+theme.load_plugins = function(opts)
+  set(0, "BlinkCmpMenuBorder", { link = "FloatBorder" })
+
+  set(0, "FzfLuaNormal", { link = "NormalFloat" })
+  set(0, "FzfLuaCursorLine", { link = "NormalFloat" })
+  set(0, "FzfLuaFzfCursorLine", { link = "NormalFloat" })
+  set(0, "FzfLuaFzfScrollbar", { link = "NormalFloat" })
+  set(0, "FzfLuaFzfPointer", { link = "NormalFloat" })
+  set(0, "FzfLuaFzfGutter", { link = "NormalFloat" })
+  set(0, "FzfLuaBorder", { link = "FloatBorder" })
 end
 
 return theme

@@ -23,6 +23,7 @@ M.apply = function()
   pre()
   theme.load_ui(running_opts)
   theme.load_text(running_opts)
+  theme.load_plugins(running_opts)
 end
 
-return M 
+return M
