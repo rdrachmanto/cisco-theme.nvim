@@ -6,4 +6,4 @@ local options = {
   italic_comments = false,
 }
 
-return options 
+return options

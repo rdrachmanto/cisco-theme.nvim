@@ -19,8 +19,9 @@ theme.load_ui = function(opts)
     set(0, "PmenuSel", { fg = c.black1, bg = c.orange2 })
   end
 
-  set(0, "TabLine", { fg = c.black5, bg = c.black1 })
-  set(0, "TabLineSel", { fg = c.black5, bg = c.black1 })
+  set(0, "TabLine", { fg = c.black5, bg = c.black4 })
+  set(0, "TabLineFill", { fg = c.black5, bg = c.black1 })
+  set(0, "TabLineSel", { fg = c.black1, bg = c.orange3 })
   set(0, "WinBar", { fg = c.black5, bg = c.black1 })
   set(0, "WinBarNC", { fg = c.black5, bg = c.black1 })
   set(0, "WinSeparator", { fg = c.black4 })
