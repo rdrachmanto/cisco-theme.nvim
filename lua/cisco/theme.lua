@@ -63,6 +63,11 @@ theme.load_plugins = function(opts)
   set(0, "FzfLuaFzfPointer", { link = "NormalFloat" })
   set(0, "FzfLuaFzfGutter", { link = "NormalFloat" })
   set(0, "FzfLuaBorder", { link = "FloatBorder" })
+
+  set(0, "netrwDir", { fg = c.pink })
+  set(0, "netrwTreeBar", { fg = c.black4 })
+  set(0, "netrwClassify", { fg = c.orange4 })
+  set(0, "netrwMarkFile", { bg = c.black4, bold = true })
 end
 
 return theme
