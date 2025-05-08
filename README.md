@@ -33,7 +33,9 @@ This is a port of Cisco theme, originally for Zed editor, now available for Neov
 
 ## Supported Plugins
 
-WIP!
+- FzfLua
+- BlinkCmp (limited)
+- WhichKey
 
 ## Options
 
