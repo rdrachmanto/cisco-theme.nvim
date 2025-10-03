@@ -16,7 +16,7 @@ theme.load_ui = function(opts)
     set(0, "WinBarNC", { fg = c.black5, bg = c.black1 })
     set(0, "StatusLine", { fg = c.black5, bg = c.black1 })
     set(0, "MsgArea", { fg = c.black5 })
-  else if opts.mode == "light" then
+  elseif opts.mode == "light" then
     set(0, "Normal", { fg = c.black1, bg = c.light1 })
     set(0, "CursorLine", { bg = c.light2 })
     set(0, "StatusLine", { fg = c.black5, bg = c.black1 })
