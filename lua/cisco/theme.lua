@@ -61,8 +61,6 @@ theme.load_text = function(opts)
     set(0, "@variable", { fg = c.light2 })
     set(0, "Function", { fg = c.purple1 })
     set(0, "@property", { fg = c.light2 })
-  else if opts.mode == "light" then
-
   end
 
 end
