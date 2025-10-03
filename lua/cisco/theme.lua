@@ -7,8 +7,10 @@ theme.load_ui = function(opts)
   
   if opts.mode == "dark" then
     set(0, "Normal", { fg = c.light2, bg = c.black1 })
+    set(0, "CursorLine", { bg = c.black4 })
   else
     set(0, "Normal", { fg = c.black1, bg = c.light1 })
+    set(0, "CursorLine", { bg = c.light2 })
   end
 
   if opts.contrast.floating_windows == true then
@@ -30,7 +32,6 @@ theme.load_ui = function(opts)
   set(0, "WinBar", { fg = c.black5, bg = c.black1 })
   set(0, "WinBarNC", { fg = c.black5, bg = c.black1 })
   set(0, "WinSeparator", { fg = c.black4 })
-  set(0, "CursorLine", { bg = c.black4 })
   set(0, "CursorLineNr", { fg = c.orange2 })
   set(0, "StatusLine", { fg = c.black5, bg = c.black1 })
   set(0, "MsgArea", { fg = c.black5 })
