@@ -19,7 +19,9 @@ theme.load_ui = function(opts)
   elseif opts.mode == "light" then
     set(0, "Normal", { fg = c.black1, bg = c.light1 })
     set(0, "CursorLine", { bg = c.light2 })
-    set(0, "StatusLine", { fg = c.black5, bg = c.black1 })
+    set(0, "StatusLine", { fg = c.black5, bg = c.light1 })
+    set(0, "WinBar", { fg = c.black5, bg = c.light1 })
+    set(0, "WinBarNC", { fg = c.black5, bg = c.light1 })
   end
 
   if opts.contrast.floating_windows == true then
@@ -40,27 +42,35 @@ theme.load_ui = function(opts)
 end
 
 theme.load_text = function(opts)
-  if opts.mode == "dark" then
-    set(0, "Comment", { fg = c.black5, italic = opts.italic_comments  })
-    set(0, "Statement", { fg = c.pink, italic = opts.italic_keywords })
+  set(0, "Comment", { fg = c.black5, italic = opts.italic_comments  })
+  set(0, "Statement", { fg = c.pink, italic = opts.italic_keywords })
+  set(0, "Type", { fg = c.blue5 })
+  set(0, "@string.escape", { fg = c.pink })
+  set(0, "String", { fg = c.orange3 })
+  set(0, "Special", { fg = c.blue5 })
+  set(0, "WarningMsg", { fg = c.orange1 })
+  set(0, "Constant", { fg = c.blue5 })
+  set(0, "Operator", { fg = c.pink })
+  set(0, "PreProc", { fg = c.orange4 })
+  set(0, "Function", { fg = c.purple1 })
+  set(0, "@string.regexp", { fg = c.black6 })
 
-    set(0, "Type", { fg = c.blue5 })
-    set(0, "@string.escape", { fg = c.pink })
+  if opts.mode == "dark" then
     set(0, "Number", { fg = c.light1 })
-    set(0, "@string.regexp", { fg = c.black6 })
-    set(0, "String", { fg = c.orange3 })
-    set(0, "Special", { fg = c.blue5 })
-    set(0, "WarningMsg", { fg = c.orange1 })
-    set(0, "Constant", { fg = c.blue5 })
-    set(0, "Operator", { fg = c.pink })
     set(0, "Delimiter", { fg = c.light2 })
     set(0, "@markup", { fg = c.black5 })
     set(0, "@punctuation", { fg = c.light2 })
-    set(0, "PreProc", { fg = c.orange4 })
     set(0, "Identifier", { fg = c.light2 })
     set(0, "@variable", { fg = c.light2 })
-    set(0, "Function", { fg = c.purple1 })
     set(0, "@property", { fg = c.light2 })
+  elseif opts.mode == "light" then
+    set(0, "Number", { fg = c.black1 })
+    set(0, "Delimiter", { fg = c.black1 })
+    set(0, "@markup", { fg = c.black5 })
+    set(0, "@punctuation", { fg = c.black1 })
+    set(0, "Identifier", { fg = c.black1 })
+    set(0, "@variable", { fg = c.black1 })
+    set(0, "@property", { fg = c.black1 })
   end
 
 end
