@@ -4,6 +4,7 @@ local options = {
   },
   italic_keywords = true,
   italic_comments = false,
+  mode = "dark"
 }
 
 return options

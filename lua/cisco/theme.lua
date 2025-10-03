@@ -4,7 +4,12 @@ local set = vim.api.nvim_set_hl
 local c = require("cisco.colors")
 
 theme.load_ui = function(opts)
-  set(0, "Normal", { fg = c.light2, bg = c.black1 })
+  
+  if opts.mode == "dark" then
+    set(0, "Normal", { fg = c.light2, bg = c.black1 })
+  else
+    set(0, "Normal", { fg = c.black1, bg = c.light2 })
+  end
 
   if opts.contrast.floating_windows == true then
     set(0, "NormalFloat", { fg = c.light2, bg = c.black2 })
