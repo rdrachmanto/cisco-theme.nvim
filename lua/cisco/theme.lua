@@ -16,26 +16,40 @@ theme.load_ui = function(opts)
     set(0, "WinBarNC", { fg = c.black5, bg = c.black1 })
     set(0, "StatusLine", { fg = c.black5, bg = c.black1 })
     set(0, "MsgArea", { fg = c.black5 })
+
+    if opts.contrast.floating_windows == true then
+      set(0, "NormalFloat", { fg = c.light2, bg = c.black2 })
+      set(0, "FloatBorder", { fg = c.black4, bg = c.black2 })
+      set(0, "FloatTitle", { bg = c.black2 })
+      set(0, "Pmenu", { fg = c.light2, bg = c.black2 })
+      set(0, "PmenuSel", { fg = c.black2, bg = c.orange2 })
+    else
+      set(0, "NormalFloat", { fg = c.light2, bg = c.black1 })
+      set(0, "FloatBorder", { fg = c.black2, bg = "None" })
+      set(0, "Pmenu", { fg = c.light2, bg = c.black1 })
+      set(0, "PmenuSel", { fg = c.black1, bg = c.orange2 })
+    end
   elseif opts.mode == "light" then
     set(0, "Normal", { fg = c.black1, bg = c.light1 })
     set(0, "CursorLine", { bg = c.light2 })
     set(0, "StatusLine", { fg = c.black5, bg = c.light1 })
     set(0, "WinBar", { fg = c.black5, bg = c.light1 })
     set(0, "WinBarNC", { fg = c.black5, bg = c.light1 })
+
+    if opts.contrast.floating_windows == true then
+      set(0, "NormalFloat", { fg = c.black2, bg = c.light2 })
+      set(0, "FloatBorder", { fg = c.black4, bg = c.light2 })
+      set(0, "FloatTitle", { bg = c.light2 })
+      set(0, "Pmenu", { fg = c.black2, bg = c.light2 })
+      set(0, "PmenuSel", { fg = c.black2, bg = c.orange2 })
+    else
+      set(0, "NormalFloat", { fg = c.black1, bg = c.light1 })
+      set(0, "FloatBorder", { fg = c.black2, bg = "None" })
+      set(0, "Pmenu", { fg = c.black1, bg = c.light1 })
+      set(0, "PmenuSel", { fg = c.black1, bg = c.orange2 })
+    end
   end
 
-  if opts.contrast.floating_windows == true then
-    set(0, "NormalFloat", { fg = c.light2, bg = c.black2 })
-    set(0, "FloatBorder", { fg = c.black4, bg = c.black2 })
-    set(0, "FloatTitle", { bg = c.black2 })
-    set(0, "Pmenu", { fg = c.light2, bg = c.black2 })
-    set(0, "PmenuSel", { fg = c.black2, bg = c.orange2 })
-  else
-    set(0, "NormalFloat", { fg = c.light2, bg = c.black1 })
-    set(0, "FloatBorder", { fg = c.black2, bg = "None" })
-    set(0, "Pmenu", { fg = c.light2, bg = c.black1 })
-    set(0, "PmenuSel", { fg = c.black1, bg = c.orange2 })
-  end
 
   set(0, "WinSeparator", { fg = c.black4 })
   set(0, "CursorLineNr", { fg = c.orange2 })
