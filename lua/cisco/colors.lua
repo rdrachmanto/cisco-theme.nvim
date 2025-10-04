@@ -8,6 +8,7 @@ local colors = {
 
   light1  = "#f8f8f8",
   light2  = "#cecdc3",
+  light3  = "#fefefe",
 
   blue1   = "#2b5375",
   blue2   = "#3aa99f",
@@ -16,7 +17,9 @@ local colors = {
   blue5   = "#79b8ff",
   blue6   = "#8caec1",
 
+  lightgreen = "#a9be50",
   green   = "#879a39",
+  green2  = "#6c7b2e",
 
   yellow1 = "#ad8301",
   yellow2 = "#d0a215",
@@ -32,6 +35,7 @@ local colors = {
   purple3 = "#834de8",
 
   pink    = "#fa7584",
+  pink2   = "#f84055",
 
   red1    = "#d14d41",
   red2    = "#d3604f"

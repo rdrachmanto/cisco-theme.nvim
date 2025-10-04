@@ -1,4 +1,5 @@
-local theme = require("cisco.theme")
+local theme_light = require("cisco.theme_light")
+local theme_dark = require("cisco.theme_dark")
 local default_opts = require("cisco.options")
 
 local M = {}
@@ -21,9 +22,15 @@ end
 
 M.apply = function()
   pre()
-  theme.load_ui(running_opts)
-  theme.load_text(running_opts)
-  theme.load_plugins(running_opts)
+  if running_opts.mode == "dark" then
+    theme_dark.load_ui(running_opts)
+    theme_dark.load_text(running_opts)
+    theme_dark.load_plugins(running_opts)
+  elseif running_opts.mode == "light" then
+    theme_light.load_ui(running_opts)
+    theme_light.load_text(running_opts)
+    theme_light.load_plugins(running_opts)
+  end
 end
 
 return M

@@ -19,7 +19,8 @@ This is a port of Cisco theme, originally for Zed editor, now available for Neov
            require("cisco").setup({
                contrast = {
                    floating_windows = true
-               }
+               },
+               mode = "dark"  -- options: "dark", or "light"
            })
        end
    }
