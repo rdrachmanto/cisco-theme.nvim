@@ -4,6 +4,8 @@ local set = vim.api.nvim_set_hl
 local c = require("cisco.colors")
 
 theme.load_ui = function(opts)
+  set(0, "WinSeparator", { fg = c.black4 })
+  set(0, "CursorLineNr", { fg = c.orange2 })
   
   if opts.mode == "dark" then
     set(0, "Normal", { fg = c.light2, bg = c.black1 })
@@ -35,6 +37,7 @@ theme.load_ui = function(opts)
     set(0, "StatusLine", { fg = c.black5, bg = c.light1 })
     set(0, "WinBar", { fg = c.black5, bg = c.light1 })
     set(0, "WinBarNC", { fg = c.black5, bg = c.light1 })
+    set(0, "WinSeparator", { fg = c.black4 })
 
     if opts.contrast.floating_windows == true then
       set(0, "NormalFloat", { fg = c.black2, bg = c.light2 })
@@ -49,10 +52,6 @@ theme.load_ui = function(opts)
       set(0, "PmenuSel", { fg = c.black1, bg = c.orange2 })
     end
   end
-
-
-  set(0, "WinSeparator", { fg = c.black4 })
-  set(0, "CursorLineNr", { fg = c.orange2 })
 end
 
 theme.load_text = function(opts)
@@ -78,8 +77,15 @@ theme.load_text = function(opts)
     set(0, "@variable", { fg = c.light2 })
     set(0, "@property", { fg = c.light2 })
   elseif opts.mode == "light" then
+    set(0, "Type", { fg = c.blue4 })
+    set(0, "Function", { fg = c.purple3 })
+    set(0, "String", { fg = c.orange2 })
     set(0, "Number", { fg = c.black1 })
+    set(0, "Special", { fg = c.blue4 })
     set(0, "Delimiter", { fg = c.black1 })
+    set(0, "Constant", { fg = c.blue4 })
+    set(0, "Operator", { fg = c.pink })
+    set(0, "PreProc", { fg = c.orange2 })
     set(0, "@markup", { fg = c.black5 })
     set(0, "@punctuation", { fg = c.black1 })
     set(0, "Identifier", { fg = c.black1 })

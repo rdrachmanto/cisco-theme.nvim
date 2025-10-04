@@ -29,6 +29,7 @@ local colors = {
 
   purple1 = "#b392f1",
   purple2 = "#e394dc",
+  purple3 = "#834de8",
 
   pink    = "#fa7584",
 
